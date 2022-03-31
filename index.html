@@ -1,0 +1,82 @@
+<html>
+<body>
+<style>
+body
+{
+	font-family:"Times New Roman"; 
+	font-size:20px;
+	background-image: linear-gradient(to right, rgba(2, 48, 32),rgba(34, 139, 34), rgba(80, 200, 120));
+	color:white;
+	text-align: center
+}
+#waybackhome{
+	background-color:red;
+	border-radius:5px;
+	font-size:30px;
+	color:white;
+	text-decoration: none;
+}
+#waybackhome:hover{
+	background-color:yellowgreen;
+  color:black;
+  transition-duration: 0.4s;
+}
+  
+ #concern1{
+	color:#white;
+	border:solid;
+	width:400px;
+	height:450px;
+	padding:5px;
+	border-radius:5px;
+	 box-shadow: 5px 10px #888888;
+	margin-left:35%;
+
+
+}
+#input{
+	border-radius:5px;
+		text-align: center
+}
+</style>
+
+<a href="login.php" id="waybackhome">Home</a>
+
+
+
+
+        <h1>Send your concern here!</h1>
+   <form id="concern1" action="https://formsubmit.co/earl808bass@email.com" method="POST">
+			<br>
+			<br>
+			<br>
+            <label for="firstName" class="form-label">First Name</label>
+			<br>
+            <input type="text" id="input" class="form-control" placeholder="First Name" id="firstName" required>
+			<br>
+       
+            <label for="lastName" class="form-label">Last Name</label>
+			<br>
+            <input type="text" id="input" class="form-control" placeholder="Last Name" id="lastName" required>
+			<br>
+    
+            <label for="emailInfo" class="form-label">E-mail</label>
+			<br>
+            <input type="email" id="input" class="form-control" placeholder="E-mail" id="emailInfo" required>
+			<br>
+        
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+			<br>
+            <input type="text" id="input" class="form-control" id="phoneNumber" placeholder="+63">
+			<br>
+      
+            <label for="comments" class="form-label">Comments, questions?</label>
+			<br>
+            <textarea class="form-control" id="comments" rows="3" required></textarea>
+			<br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+  
+</form>
+
+</body>
+</html>
